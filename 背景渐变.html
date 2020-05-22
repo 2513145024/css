@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            font-family:"Bitter",serif;
+            text-align: center;
+            height: 100%;
+            font-size: 20px;
+        }
+        .boos,.one ,.two,.three{
+            width: 100%;
+            height: 100%;
+        }
+        .boos{
+            position: relative;
+            z-index: 1;
+        }
+        .one ,.two,.three{
+            position: absolute;
+        }
+        .two,.three{
+            opacity: 0;
+        }
+
+
+
+
+        .one{
+            background:linear-gradient(#5ff8ca, #60e08c);
+            z-index: 10;
+            animation: one 8s infinite ;
+        }
+        @keyframes one {
+            0%{
+                opacity: 1;
+            }
+            10%{
+                opacity: 0.8;
+            }
+            20%{
+                opacity: 0.6;
+            }
+            30%{
+                opacity: 0.4;
+            }
+            40%{
+                opacity: 0.2;
+            }
+            50%{
+                opacity: 0.1;
+            }
+            60%{
+                opacity: 0.2;
+            }
+            70%{
+                opacity: 0.4;
+            }
+            80%{
+                opacity: 0.6;
+            }
+            90%{
+                opacity: 0.8;
+            }
+            100%{
+                opacity: 1;
+            }
+
+
+        }
+        .two{
+            background: linear-gradient(#19eaa6, #00a1f0);
+            z-index: 20;
+            animation: two 8s infinite ;
+            animation-delay: 2s;
+        }
+        @keyframes two {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.2;
+            }
+            20% {
+                opacity: 0.4;
+            }
+            30% {
+                opacity: 0.6;
+            }
+            40% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            60% {
+                opacity: 0.8;
+            }
+            70% {
+                opacity: 0.6;
+            }
+            80% {
+                opacity: 0.4;
+            }
+            90% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .three{
+            background: linear-gradient(#aab7f8, #ff75c6);
+            z-index: 30;
+            animation: three 8s infinite ;
+            animation-delay: 6s;
+        }
+        @keyframes three {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.2;
+            }
+            20% {
+                opacity: 0.4;
+            }
+            30% {
+                opacity: 0.6;
+            }
+            40% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+            }
+            60% {
+                opacity: 0.8;
+            }
+            70% {
+                opacity: 0.6;
+            }
+            80% {
+                opacity: 0.4;
+            }
+            90% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+
+        .txt{
+            position: absolute;
+            width: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boos">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="txt">
+            <h1>加载中...loading...</h1>
+        </div>
+    </div>
+</body>
+</html>

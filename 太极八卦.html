@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            margin:0;
+            padding: 0;
+            background-color: #ccc;
+        }
+        .taiji{
+            width: 400px;
+            height: 400px;
+            background:linear-gradient(to right,black 50%,white 50%);
+            margin: 100px auto;
+            border-radius: 50%;
+            animation: move 1s infinite linear;
+        }
+        @keyframes move {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .left, .right{
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        .left{
+            border: 70px solid #000;
+            background-color: #fff;
+            animation: move1 1s infinite alternate linear;
+            transform-origin: 50% 0;
+        }
+        .right{
+            border: 70px solid #fff;
+            background-color: #000;
+            animation: move1 1s infinite alternate linear;
+            animation-delay: -1s;
+            transform-origin: 50% 100%;
+        }
+        @keyframes move1 {
+            from{
+                transform: scale(0.5);
+            }
+            to{
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="taiji">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
